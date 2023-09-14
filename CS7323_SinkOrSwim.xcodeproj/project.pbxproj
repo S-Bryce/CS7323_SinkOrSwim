@@ -16,6 +16,9 @@
 		02D2AEDF2AA95E63004E264A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D2AEDD2AA95E63004E264A /* LaunchScreen.storyboard */; };
 		A8CD68D02AB00CE000B55EF4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD68CF2AB00CE000B55EF4 /* TableViewController.swift */; };
 		A8CD68D52AB01B6E00B55EF4 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CD68D42AB01B6E00B55EF4 /* ImageModel.m */; };
+		F29456D42AB29FFD009C213D /* PopUpModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29456D32AB29FFD009C213D /* PopUpModalViewController.swift */; };
+		F29456D62AB2AEAB009C213D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29456D52AB2AEAB009C213D /* CollectionViewController.swift */; };
+		F29456D82AB2B06B009C213D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29456D72AB2B06B009C213D /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		A8CD68D12AB01B2400B55EF4 /* CS7323_SinkOrSwim-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CS7323_SinkOrSwim-Bridging-Header.h"; sourceTree = "<group>"; };
 		A8CD68D42AB01B6E00B55EF4 /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
 		A8CD68D62AB01C5800B55EF4 /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		F29456D32AB29FFD009C213D /* PopUpModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpModalViewController.swift; sourceTree = "<group>"; };
+		F29456D52AB2AEAB009C213D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		F29456D72AB2B06B009C213D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,9 @@
 				A8CD68D62AB01C5800B55EF4 /* ImageModel.h */,
 				A8CD68D42AB01B6E00B55EF4 /* ImageModel.m */,
 				A8CD68D12AB01B2400B55EF4 /* CS7323_SinkOrSwim-Bridging-Header.h */,
+				F29456D32AB29FFD009C213D /* PopUpModalViewController.swift */,
+				F29456D52AB2AEAB009C213D /* CollectionViewController.swift */,
+				F29456D72AB2B06B009C213D /* CollectionViewCell.swift */,
 			);
 			path = CS7323_SinkOrSwim;
 			sourceTree = "<group>";
@@ -154,7 +163,10 @@
 			files = (
 				A8CD68D52AB01B6E00B55EF4 /* ImageModel.m in Sources */,
 				02D2AED72AA95E5E004E264A /* ViewController.swift in Sources */,
+				F29456D82AB2B06B009C213D /* CollectionViewCell.swift in Sources */,
+				F29456D42AB29FFD009C213D /* PopUpModalViewController.swift in Sources */,
 				02D2AED32AA95E5E004E264A /* AppDelegate.swift in Sources */,
+				F29456D62AB2AEAB009C213D /* CollectionViewController.swift in Sources */,
 				02D2AED52AA95E5E004E264A /* SceneDelegate.swift in Sources */,
 				022868842AB16E73002AEAC5 /* PickerViewController.swift in Sources */,
 				A8CD68D02AB00CE000B55EF4 /* TableViewController.swift in Sources */,

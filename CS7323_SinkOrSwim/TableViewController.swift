@@ -7,12 +7,17 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class TableViewController: UITableViewController, PopUpModalDelegate {
+    
+    func dismissModal() {
+        self.dismiss(animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        PopUpModalViewController.present(
+            initialView: self,
+            delegate: self)
     }
     
     // MARK: - Table view data source

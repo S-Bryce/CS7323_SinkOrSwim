@@ -16,10 +16,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     @IBOutlet weak var selectedImageLabel: UILabel!
     @IBOutlet weak var selectedImage: UIImageView!
     
+    @IBOutlet weak var colorSlider: UISlider!
     
     private var _timer: Timer?
     private var _imageIndex = 0
-    private var _selectedImageName: String?
+    private var _selectedImageName: String? = "exclamationmark.3"
     
     lazy var imageModel:ImageModel = {
         return ImageModel.sharedInstance()
@@ -33,6 +34,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         topLeftImageView.image = imageModel.getImageWith(_imageIndex)
     }
     
+    
+    @IBAction func colorSliderChanged(_ sender: Any) {
+        selectedImage.tintColor = UIColor(red: 0.0, green: 0.0, blue: CGFloat(colorSlider.value), alpha: 1.0)
+    }
     
     @objc func changeImage() {
         _imageIndex += 1
@@ -49,19 +54,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         selectedImage.image = topLeftImageView.image
         selectedImageLabel.text = _selectedImageName
     }
-    
-        
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            if let selectedImage = info[.originalImage] as? UIImage {
-                // bottomHalfImageView. = selectedImage
-            }
-            dismiss(animated: true, completion: nil)
-        }
-        
-        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            dismiss(animated: true, completion: nil)
-        }
-    }
+
+}
 
 
 
